@@ -1,5 +1,9 @@
 <?php
+
 namespace Service;
+
+use Model\BattleResult;
+use Model\AbstractShip;
 
 class BattleManager
 {
