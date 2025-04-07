@@ -1,9 +1,9 @@
 <?php
 
 $configuration = array(
-    'db_dsn'  => 'mysql:host=localhost;dbname=oo_battle',
-    'db_user' => 'root',
-    'db_pass' => null,
+    'db_dsn'  => 'mysql:host=127.127.126.50;dbname=oo_battle',
+    'db_user' => 'wolf',
+    'db_pass' => 'pass1234',
 );
 
 require_once __DIR__.'/lib/Service/Container.php';
