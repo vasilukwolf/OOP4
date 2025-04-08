@@ -6,6 +6,7 @@ use Model\RebelShip;
 use Model\Ship;
 use Model\AbstractShip;
 use Model\ShipCollection;
+use Model\BountyHunterShip;
 
 class ShipLoader
 {
@@ -15,7 +16,7 @@ class ShipLoader
     {
         $this->shipStorage = $shipStorage;
     }
-    
+
    /**
      * @return ShipCollection
      */
@@ -28,7 +29,7 @@ class ShipLoader
         foreach ($shipsData as $shipData) {
             $ships[] = $this->createShipFromData($shipData);
         }
-
+        $ships[] = new BountyHunterShip('Slave I');
         return new ShipCollection($ships);
     }
 
