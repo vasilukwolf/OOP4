@@ -21,7 +21,6 @@ class PdoShipStorage implements ShipStorageInterface
 
     public function fetchSingleShipData($id)
     {
-        throw new \InvalidArgumentException('somthing else went wrong');
         $statement = $this->pdo->prepare('SELECT * FROM ship WHERE id = :id');
         $statement->execute(array('id' => $id));
         $shipArray = $statement->fetch(\PDO::FETCH_ASSOC);
