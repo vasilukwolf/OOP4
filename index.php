@@ -16,6 +16,7 @@ $ships[] = $brokenShip;
 
 $battleTypes = BattleManager::getAllBattleTypesWithDescriptions();
 
+$ships->removeAllBrokenShips();
 $errorMessage = '';
 if (isset($_GET['error'])) {
     switch ($_GET['error']) {
